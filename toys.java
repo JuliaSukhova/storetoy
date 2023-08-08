@@ -15,3 +15,21 @@ public class ToyLottery {
             toyQueue.offer(toy);
         }
     }
+
+    public void runLottery() {
+        System.out.println("Выигранные игрушки: ");
+        while (!toyQueue.isEmpty()) {
+            Toy winner = toyQueue.poll();
+            System.out.println(winner.getName());
+        }
+    }
+
+    public static void main(String[] args) {
+        String[] toyIds = {"1", "2", "3"};
+        String[] toyNames = {"Мишка", "Кукла", "Робот"};
+        int[] toyFrequencies = {3, 2, 4};
+
+        ToyLottery toyLottery = new ToyLottery(toyIds, toyNames, toyFrequencies);
+        toyLottery.runLottery();
+    }
+}
