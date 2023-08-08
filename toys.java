@@ -48,3 +48,8 @@ class Toy {
     public String getName() {
         return name;
     }
+
+    public int getFrequency() {
+        return frequency;
+    }
+}
