@@ -33,3 +33,8 @@ public class ToyLottery {
         toyLottery.runLottery();
     }
 }
+
+class Toy {
+    private String id;
+    private String name;
+    private int frequency;
